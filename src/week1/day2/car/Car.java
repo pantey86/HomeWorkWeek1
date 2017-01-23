@@ -13,12 +13,13 @@ public class Car {
     private Wheel[] wheels = new Wheel[4];
     private Wheel extraWheel;
 
-    public Car(String carBrend, String carModel, Engine engine, Wheel[] wheels) {
+    public Car(String carBrend, String carModel, Engine engine, Wheel[] wheels, Wheel extraWheel) {
 
         this.carBrend = carBrend;
         this.carModel = carModel;
         this.engine = engine;
         this.wheels = wheels;
+        this.extraWheel = extraWheel;
     }
 
     public void move(double speed) {
@@ -30,10 +31,12 @@ public class Car {
     }
 
     public void changeWheel(int position) {
+
         // position: 1-"front left wheel"
         // position: 2-"front right wheel"
         // position: 3-"back fight wheel"
         // position: 4-"back left wheel"
+
         String positionStr = "";
         switch (position) {
             case 1:
@@ -54,13 +57,11 @@ public class Car {
                 break;
             default:
                 System.out.println("You have to enter a number of wheel to change (From 1 to 4)");
-                //         changeWheel(int position); //- doesn't work . Why?
         }
         if (!positionStr.equals("")) {
             System.out.println(positionStr + " was changed");
         } else {
             System.out.println("You haven't change any wheel");
-            //   changeWheel(int position);//- doesn't work . Why?
         }
     }
 
