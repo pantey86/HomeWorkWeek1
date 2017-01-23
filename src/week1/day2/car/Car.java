@@ -60,7 +60,7 @@ public class Car {
             System.out.println(positionStr + " was changed");
         } else {
             System.out.println("You haven't change any wheel");
-            //   changeWheel(int position);
+            //   changeWheel(int position);//- doesn't work . Why?
         }
     }
 
