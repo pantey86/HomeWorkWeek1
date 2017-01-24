@@ -3,11 +3,11 @@ package week1.day2.puppy;
 /**
  * Created by User on 23.01.2017.
  */
-public abstract  class Animal {
+public abstract class Animal {
 
-    int legsNumb;
-    int age;
-    boolean hasTail;
+    protected int legsNumb;
+    protected int age;
+    protected boolean hasTail;
 
-    public abstract void move ();
+    public abstract void move();
 }

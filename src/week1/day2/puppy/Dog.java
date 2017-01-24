@@ -5,13 +5,13 @@ package week1.day2.puppy;
  */
 public class Dog extends Animal {
 
-    String name ;
+    private String name;
 
     public Dog(String name, int age, int legsNumb, boolean hasTail) {
-        this.age=age;
+        this.age = age;
         this.name = name;
         this.legsNumb = legsNumb;
-        this.hasTail =hasTail;
+        this.hasTail = hasTail;
     }
 
     public String getName() {
@@ -22,23 +22,23 @@ public class Dog extends Animal {
         this.name = name;
     }
 
-    public void showName (){
+    public void showName() {
         System.out.println("name - " + name);
     }
 
-    public void voice (){
+    public void voice() {
         System.out.println("gav gav!!!");
     }
 
-    public void jump (){
+    public void jump() {
         System.out.println("The dog jumps high");
     }
 
-    public void move (){
+    public void move() {
         System.out.println("The dog runs fast ");
     }
 
-    public void bite (){
+    public void bite() {
         System.out.println("The dog bites hard ");
     }
 }

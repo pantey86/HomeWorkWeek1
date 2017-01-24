@@ -8,8 +8,8 @@ public class Puppy extends Dog {
 
     boolean eatMeat;
 
-      public Puppy (String name,int age,int legsNumb,boolean hasTail,boolean eatMeat){
-        super(name,age,legsNumb,hasTail);
+    public Puppy(String name, int age, int legsNumb, boolean hasTail, boolean eatMeat) {
+        super(name, age, legsNumb, hasTail);
         this.eatMeat = eatMeat;
     }
 
