@@ -6,7 +6,7 @@ package week1.day2.puppy;
  */
 public class Puppy extends Dog {
 
-    boolean eatMeat;
+   private boolean eatMeat;
 
     public Puppy(String name, int age, int legsNumb, boolean hasTail, boolean eatMeat) {
         super(name, age, legsNumb, hasTail);
